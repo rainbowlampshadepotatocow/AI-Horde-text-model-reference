@@ -1,6 +1,9 @@
 quant
+F32
+BF16
 F16
 Q8_0
+Q8_1
 Q6_K
 Q5_K_M
 Q5_K_S
@@ -14,3 +17,6 @@ Q3_K_L
 Q3_K_M
 Q3_K_S
 Q2_K
+bnb-8bit
+bnb-4bit
+onnx-int8
