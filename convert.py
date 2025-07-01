@@ -30,6 +30,11 @@ params = json.load(open("generation_params.json", "r"))
 
 data = {}
 
+# Load quantization types
+with open("quants.csv", newline="") as quantfile:
+    quant_reader = csv.DictReader(quantfile)
+    quants = [row["quant"].strip() for row in quant_reader if row["quant"].strip()]
+
 with open(input_file, newline="") as csvfile:
     reader = csv.DictReader(csvfile)
     for row in reader:
@@ -75,7 +80,12 @@ with open(input_file, newline="") as csvfile:
         row = {k: v for k, v in row.items() if v}
 
         # Add the model record to the data
-        for key_format in ["{name}", "aphrodite/{name}", "koboldcpp/{model_name}"]:
+        key_formats = ["{name}", "aphrodite/{name}", "koboldcpp/{model_name}"]
+        for quant in quants:
+            key_formats.append(f"aphrodite/{{name}}.{quant}")
+            key_formats.append(f"koboldcpp/{{model_name}}.{quant}")
+
+        for key_format in key_formats:
             key = key_format.format(name=name, model_name=model_name)
             data[key] = {"name": key, "model_name": model_name, **defaults, **row}
 
