@@ -15371,6 +15371,57 @@
             "88B"
         ]
     },
+    "MiniMaxAI/MiniMax-M2.7": {
+        "name": "MiniMaxAI/MiniMax-M2.7",
+        "model_name": "MiniMax-M2.7",
+        "baseline": "",
+        "parameters": 229000000000,
+        "description": "",
+        "version": "1",
+        "style": "utility",
+        "nsfw": false,
+        "display_name": "MiniMax M2.7",
+        "url": "https://huggingface.co/MiniMaxAI/MiniMax-M2.7",
+        "tags": [
+            "229B",
+            "agentic",
+            "utility"
+        ]
+    },
+    "aphrodite/MiniMaxAI/MiniMax-M2.7": {
+        "name": "aphrodite/MiniMaxAI/MiniMax-M2.7",
+        "model_name": "MiniMax-M2.7",
+        "baseline": "",
+        "parameters": 229000000000,
+        "description": "",
+        "version": "1",
+        "style": "utility",
+        "nsfw": false,
+        "display_name": "MiniMax M2.7",
+        "url": "https://huggingface.co/MiniMaxAI/MiniMax-M2.7",
+        "tags": [
+            "229B",
+            "agentic",
+            "utility"
+        ]
+    },
+    "koboldcpp/MiniMax-M2.7": {
+        "name": "koboldcpp/MiniMax-M2.7",
+        "model_name": "MiniMax-M2.7",
+        "baseline": "",
+        "parameters": 229000000000,
+        "description": "",
+        "version": "1",
+        "style": "utility",
+        "nsfw": false,
+        "display_name": "MiniMax M2.7",
+        "url": "https://huggingface.co/MiniMaxAI/MiniMax-M2.7",
+        "tags": [
+            "229B",
+            "agentic",
+            "utility"
+        ]
+    },
     "mistralai/Devstral-2-123B-Instruct-2512": {
         "name": "mistralai/Devstral-2-123B-Instruct-2512",
         "model_name": "Devstral-2-123B-Instruct-2512",
@@ -33462,6 +33513,60 @@
         "url": "https://huggingface.co/zerofata/G4-MeroMero-26B-A4B",
         "tags": [
             "14B",
+            "chat",
+            "roleplay"
+        ],
+        "instruct_format": "Gemma 4"
+    },
+    "zerofata/G4-MeroMero-31B": {
+        "name": "zerofata/G4-MeroMero-31B",
+        "model_name": "G4-MeroMero-31B",
+        "baseline": "google/gemma-4-31B",
+        "parameters": 31000000000,
+        "description": "A finetune of Gemma 4 31B designed for creative tasks. This model has a slightly better swipe diversity and a less flowery / verbose writing style. Reasoning tends to average out being a bit longer than the original however. Intelligence appears to be on par with the original. Supports both thinking and non thinking.",
+        "version": "1",
+        "style": "chat",
+        "nsfw": false,
+        "display_name": "G4 MeroMero 31B",
+        "url": "https://huggingface.co/zerofata/G4-MeroMero-31B",
+        "tags": [
+            "31B",
+            "chat",
+            "roleplay"
+        ],
+        "instruct_format": "Gemma 4"
+    },
+    "aphrodite/zerofata/G4-MeroMero-31B": {
+        "name": "aphrodite/zerofata/G4-MeroMero-31B",
+        "model_name": "G4-MeroMero-31B",
+        "baseline": "google/gemma-4-31B",
+        "parameters": 31000000000,
+        "description": "A finetune of Gemma 4 31B designed for creative tasks. This model has a slightly better swipe diversity and a less flowery / verbose writing style. Reasoning tends to average out being a bit longer than the original however. Intelligence appears to be on par with the original. Supports both thinking and non thinking.",
+        "version": "1",
+        "style": "chat",
+        "nsfw": false,
+        "display_name": "G4 MeroMero 31B",
+        "url": "https://huggingface.co/zerofata/G4-MeroMero-31B",
+        "tags": [
+            "31B",
+            "chat",
+            "roleplay"
+        ],
+        "instruct_format": "Gemma 4"
+    },
+    "koboldcpp/G4-MeroMero-31B": {
+        "name": "koboldcpp/G4-MeroMero-31B",
+        "model_name": "G4-MeroMero-31B",
+        "baseline": "google/gemma-4-31B",
+        "parameters": 31000000000,
+        "description": "A finetune of Gemma 4 31B designed for creative tasks. This model has a slightly better swipe diversity and a less flowery / verbose writing style. Reasoning tends to average out being a bit longer than the original however. Intelligence appears to be on par with the original. Supports both thinking and non thinking.",
+        "version": "1",
+        "style": "chat",
+        "nsfw": false,
+        "display_name": "G4 MeroMero 31B",
+        "url": "https://huggingface.co/zerofata/G4-MeroMero-31B",
+        "tags": [
+            "31B",
             "chat",
             "roleplay"
         ],
